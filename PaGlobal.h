@@ -1,0 +1,12 @@
+#ifndef PA_GLOBAL_H
+#define PA_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PARALLIZEDALGORITHM_LIBRARY)
+#  define PARALLIZEDALGORITHM_SHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define PARALLIZEDALGORITHM_SHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // XY_GLOBAL_H
